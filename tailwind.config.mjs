@@ -18,10 +18,11 @@ export default {
         },
       },
       animation: {
-        scroll: "scroll 20s linear infinite",
+        scroll: "scroll 40s linear infinite",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        miama: ["Miama", "cursive"],
       },
     },
   },

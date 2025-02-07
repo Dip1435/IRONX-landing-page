@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
 
 const WelcomePage = () => {
   return (
-    <div className="bg-[#161E2A] relative p-5 flex flex-col justify-center items-center gap-5">
+    <div className="bg-[#161E2A] container mx-auto relative p-5 flex flex-col justify-center items-center gap-5">
       <h5 className="text-[#FFD429] font-inter font-bold text-lg z-10">
         Welcome to IRONX gym fitness
       </h5>
@@ -17,16 +18,21 @@ const WelcomePage = () => {
         fitness journey. Achieve goals step by step,
         <br /> one rep at a time. Stronger every day, both in body and in mind.
       </h6>
-      <h3 className="text-center font-[Miama] font-normal text-xl z-10">
-        <i>Selfironx</i>
-      </h3>
-      <p className="font-inter font-medium gap-2 text-center z-10">
+      <div className="flex items-center justify-center"> 
+      <Image
+        src="/Images/signature (2).svg"
+        height="45"
+        width="170"
+        alt="search"
+      />
+      </div>
+      <p className="font-inter font-medium gap-2 text-base text-center z-10">
         Ashton Mavrek -{" "}
-        <span className="text-[#E6E6E6] font-medium text-sm">GYM Trainer</span>
+        <span className="text-[#E6E6E6] font-medium text-xs">GYM Trainer</span>
       </p>
 
       <div
-        className="absolute -top-2 right-10 h-[400px] w-[400px]  bg-no-repeat bg-center bg-cover z-0"
+        className="absolute -top-2 right-[25px] h-[440px] w-[410px]  bg-no-repeat bg-center bg-cover z-0"
         style={{ backgroundImage: "url('/Images/Vector 2 (1).svg')" }}
       ></div>
 

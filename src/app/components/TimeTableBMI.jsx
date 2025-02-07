@@ -11,17 +11,18 @@ const TimeTableBMI = () => {
   ];
 
   return (
-    <div className="relative bg-[#161E2A] text-white py-16 flex flex-col items-center">
-      <h2 className="text-[#FFD429] font-bold text-lg text-center">
-        IRONX Class Timetable
-      </h2>
-      <h1 className="text-3xl font-bold mt-2 text-center">
-        Time Table & BMI Calculator
-      </h1>
-
-      <div className="relative p-4 mt-10 flex flex-wrap items-center justify-center gap-8 w-full max-w-5xl">
+    <div className="relative bg-[#161E2A] text-white py-16 pb-24 flex flex-col items-center">
+      <div className="mb-5">
+        <h2 className="text-[#FFD429] font-bold text-lg text-center">
+          IRONX Class Timetable
+        </h2>
+        <h1 className="text-3xl font-bold mt-2 text-center">
+          Time Table & BMI Calculator
+        </h1>
+      </div>
+      <div className="relative sm:p-4 p-6 mt-10 flex flex-wrap items-center justify-center gap-8 w-full max-w-5xl">
         <div
-          className="absolute right-0 -top-4 w-[450px] h-[450px] bg-cover bg-center rounded-full"
+          className="md:absolute -right-[40px] -top-[60px] sm:w-[530px] w-[300px] h-[300px] sm:h-[530px] bg-cover bg-center rounded-full"
           style={{ backgroundImage: "url('/Images/image 2.png')" }}
         ></div>
 
@@ -49,19 +50,23 @@ const TimeTableBMI = () => {
               (className, index) => (
                 <div
                   key={index}
-                  className="flex justify-between md:items-center items-start md:flex-row flex-col md:gap-0 gap-3 border-b border-gray-600 pb-3"
+                  className={`flex justify-between md:items-center items-start md:flex-row flex-col md:gap-0 gap-3 ${
+                    index !== 3 && "border-b border-gray-600"
+                  }  pb-3`}
                 >
                   <div>
-                    <p className="text-base font-normal font-inter text-[#94989B]">
+                    <p className="text-sm font-normal font-inter text-[#94989B]">
                       Class name
                     </p>
-                    <p className="text-white">{className}</p>
+                    <p className="text-white text-sm font-medium">
+                      {className}
+                    </p>
                   </div>
                   <div>
-                    <p className="text-base font-normal font-inter text-[#94989B]">
+                    <p className="text-sm font-normal font-inter text-[#94989B]">
                       Time
                     </p>
-                    <p className="text-white">
+                    <p className="text-white text-sm font-medium">
                       {
                         [
                           "9:00am - 10:00am",
@@ -73,10 +78,10 @@ const TimeTableBMI = () => {
                     </p>
                   </div>
                   <div>
-                    <p className="text-base font-normal font-inter text-[#94989B]">
+                    <p className="text-sm font-normal font-inter text-[#94989B]">
                       Trainer
                     </p>
-                    <p className="text-white">
+                    <p className="text-white text-sm font-medium">
                       {
                         [
                           "Henry Joseph",
@@ -87,7 +92,7 @@ const TimeTableBMI = () => {
                       }
                     </p>
                   </div>
-                  <button className="px-4 py-2 bg-white text-black font-medium rounded-md">
+                  <button className="px-4 py-2 bg-white text-black font-medium text-sm rounded-[10px]">
                     Join now
                   </button>
                 </div>
@@ -107,22 +112,49 @@ const TimeTableBMI = () => {
             />
           </div>
           <div className="mt-6 space-y-2">
-            {["Below 18.5", "18.5 - 24.9", "25.0 - 29.9", "30.0 and Above"].map(
-              (bmi, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between border-b border-gray-600 pb-2"
+            <div className="absolute left-1/2 h-[170px]  border-l-[0.5px] border-gray-600"></div>
+            {[
+              "BMI",
+              "Below 18.5",
+              "18.5 - 24.9",
+              "25.0 - 29.9",
+              "30.0 and Above",
+            ].map((bmi, index) => (
+              <div
+                key={index}
+                className={`flex justify-between ${
+                  index !== 4 && "border-b border-gray-600"
+                }  pb-2`}
+              >
+                <p
+                  className={`text-[#E6E6E6] sm:text-sm text-xs  ${
+                    index === 0 ? "sm:font-bold font-semibold" : "font-normal"
+                  }`}
                 >
-                  <p className="text-white">{bmi}</p>
-                  <p className="text-white font-semibold">
-                    {["Underweight", "Healthy", "Overweight", "Obese"][index]}
-                  </p>
-                </div>
-              )
-            )}
+                  {bmi}
+                </p>
+                <p
+                  className={`text-[#E6E6E6] sm:text-sm text-xs  ${
+                    index === 0 ? "sm:font-bold font-semibold" : "font-normal"
+                  }`}
+                >
+                  {
+                    [
+                      "WEIGHT STATUS",
+                      "Underweight",
+                      "Healthy",
+                      "Overweight",
+                      "Obese",
+                    ][index]
+                  }
+                </p>
+              </div>
+            ))}
           </div>
-          <p className="text-center mt-4 text-white">
-            BMR Metabolic Rate / BMI Body Mass Index
+          <p className="text-center mt-4 text-white sm:text-base text-sm font-normal">
+            <span className="font-semibold sm:text-base text-sm">BMR </span> Metabolic Rate
+            / <span className="font-semibold sm:text-base text-sm">BMI </span> Body Mass
+            Index
           </p>
         </div>
       </div>

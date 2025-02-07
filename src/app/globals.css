@@ -24,3 +24,19 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+@font-face {
+  font-family: 'Miama';
+  src: url('/fonts/Miama.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.stroke-yellow {
+  -webkit-text-stroke: 2px #FFD429; /* White border */
+}
+
+.stroke-white {
+  -webkit-text-stroke: 2px white; /* White border */
+}

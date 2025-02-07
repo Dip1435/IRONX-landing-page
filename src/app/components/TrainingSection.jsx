@@ -24,7 +24,7 @@ const trainingData = [
 const TrainingSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center py-16"
+      className="relative bg-cover bg-center py-16 md:px-8 px-6"
       style={{
         backgroundImage:
           "url('/Images/fitness-woman-working-out-with-battle-ropes-gym 2.png')",
@@ -32,7 +32,7 @@ const TrainingSection = () => {
     >
       <div className="absolute inset-0 bg-gray-400 bg-opacity-5"></div>
 
-      <div className="relative z-10 md:mx-16 mx-8 text-center">
+      <div className="relative z-10 container mx-auto text-center">
         <h2 className="text-[#FFD429] font-bold text-lg">
           IRONX Gym & Fitness Training
         </h2>
@@ -54,30 +54,37 @@ const TrainingSection = () => {
                 />
 
                 <div className="p-6 text-center">
-                  <h3 className="text-white text-lg font-semibold">
-                    <span className="text-yellow-400">
+                  <h3
+                    className={`text-2xl font-extrabold ${
+                      index === 0 ? "text-[#FFD429] stroke-yellow" : "stroke-white"
+                    } `}
+                  >
+                    <span
+                      className={` ${
+                        index === 0
+                          ? "text-[#FFD429] stroke-yellow  text-transparent bg-clip-text"
+                          : " stroke-white text-transparent bg-clip-text"
+                      }`}
+                    >
                       {training.title.split(" ")[0]}
                     </span>{" "}
                     {training.title.split(" ").slice(1).join(" ")}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-2">
+                  <p className="text-white text-sm mt-2">
                     {training.description}
                   </p>
-
-                  {/* <div className="mt-6 flex justify-center">
-                <button className="w-12 h-12 bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center hover:bg-yellow-500 transition duration-300"></button>
-              </div>
-
-              <p className="text-yellow-400 font-medium mt-2">
-                Click for Details
-              </p> */}
                 </div>
               </div>
               <div className="flex items-center justify-center flex-col gap-2 mt-2">
                 <div className="md:h-12 md:w-12 h-8 w-8 flex items-center justify-center rounded-full border text-white">
                   <IoIosArrowRoundForward className="md:h-10 md:w-10 h-6 w-6" />
                 </div>
-                  <a href="#" className="text-sm">Click for Details</a>
+                <a
+                  href="#"
+                  className={`text-sm ${index === 0 && "text-[#FFD429]"}`}
+                >
+                  Click for Details
+                </a>
               </div>
             </div>
           ))}

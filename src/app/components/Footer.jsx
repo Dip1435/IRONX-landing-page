@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import { IoSend } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#161E2A] text-white py-12 px-8 md:px-16">
+    <footer className="bg-[#161E2A] container mx-auto text-white py-12 px-6 md:px-8">
       <div className="flex flex-col flex-wrap justify-between gap-4">
         <div className="flex justify-between items-start flex-wrap md:gap-0 gap-4">
           {/* About IRONX */}
@@ -38,9 +37,7 @@ const Footer = () => {
 
           {/* Get In Touch */}
           <div className="w-full md:w-1/3">
-            <h3 className="text-xl font-bold mb-5 font-inter">
-              Get In Touch
-            </h3>
+            <h3 className="text-xl font-bold mb-5 font-inter">Get In Touch</h3>
             <ul className="text-gray-400 space-y-4 text-sm">
               <li className="flex items-center gap-2">
                 <Image
@@ -92,8 +89,8 @@ const Footer = () => {
               and we’ll be glad to help!
             </p>
           </div>
-          <div className="w-full flex md:w-1/2 mt-2 space-y-2 flex-wrap">
-            <div className="flex md:w-1/2 justify-start items-start flex-wrap gap-2">
+          <div className="w-full flex md:w-1/2 mt-2 space-y-2 gap-4 flex-wrap">
+            <div className="flex flex-col justify-center items-start flex-wrap gap-2">
               <h3 className="text-lg font-semibold ms-2">Subscribe Now</h3>
               <div className="relative flex items-center">
                 <input
@@ -101,13 +98,16 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="bg-gray-800 text-white px-4 py-2 w-full rounded-full focus:outline-none"
                 />
-                <button className="absolute right-2 bg-yellow-400 p-2 rounded-full">
-                  <IoSend className="text-black" />
-                </button>
+                <Image
+                  src="/Icons/arrow-up-circle.svg"
+                  height="40"
+                  width="50"
+                  alt="aerrow"
+                  className="absolute right-0 bottom-0"
+                />
               </div>
             </div>
-            {/* Social Icons */}
-            <div className="flex md:w-1/2 w-full items-center justify-start space-x-3 text-gray-400">
+            <div className="flex self-end pb-2 space-x-3 text-gray-400">
               <Image
                 src="/Icons/facebook.svg"
                 height="24"

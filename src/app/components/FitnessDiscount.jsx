@@ -3,10 +3,8 @@ import React from "react";
 
 const FitnessDiscount = () => {
   return (
-    <div className="relative w-full flex items-center justify-center">
-      {/* Content */}
+    <div className="relative w-full container mx-auto flex items-center justify-center">
       <div className=" flex items-center w-full bg-[#121923] md:flex-nowrap flex-wrap gap-4 md:p-0 p-8">
-        {/* Image Side */}
         <div className="md:w-1/2 w-full">
           <img
             src="/Images/image 3.png"
@@ -24,7 +22,7 @@ const FitnessDiscount = () => {
             Nulla Facilisi. Hustle Hard, Recover Smart, And Stay Focused On Your
             Fitness Journey. Achieve Goals Step By Step, One Rep At A Time.
           </p>
-          <button className="flex items-center gap-2 bg-[#FFD429] text-black px-5 py-2 rounded-[10px] font-semibold hover:bg-yellow-500">
+          <button className="flex items-center gap-2 bg-[#FFD429] text-black px-5 py-2 rounded-[10px] font-medium text-sm hover:bg-yellow-500">
             <span>
               <Image
                 src="/Icons/Calling 1.svg"
