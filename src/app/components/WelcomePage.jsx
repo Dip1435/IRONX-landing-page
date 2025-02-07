@@ -18,7 +18,7 @@ const WelcomePage = () => {
         fitness journey. Achieve goals step by step,
         <br /> one rep at a time. Stronger every day, both in body and in mind.
       </h6>
-      <div className="flex items-center justify-center"> 
+      <div className="flex items-center justify-center z-10"> 
       <Image
         src="/Images/signature (2).svg"
         height="45"

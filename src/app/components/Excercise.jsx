@@ -6,8 +6,8 @@ import Image from "next/image";
 const Excercise = () => {
   return (
     <div className="bg-[#161E2A] container mx-auto pt-5 ">
-      <div className="flex relative sm:justify-normal justify-center md:mx-8 mx-6">
-        <div className="sm:p-5 p-3 bg-[#0C1625]  max-w-fit flex xl:flex-row flex-col justify-center items-center gap-4  rounded-xl flex-wrap">
+      <div className="flex relative gap-2 justify-center items-center md:mx-8 mx-6">
+        <div className="sm:p-5 p-3 bg-[#0C1625]  max-w-fit flex  justify-center items-center gap-4  rounded-xl flex-wrap">
           <Workout
             main={
               "/Images/women-exercising-with-two-dumbbell-weight-plates 1 (1).png"
@@ -37,7 +37,8 @@ const Excercise = () => {
             }
           />
         </div>
-        <div className="sm:absolute sm:block hidden -top-[155px] -right-[5px] border-[2px] border-[#999999ba] rounded-[40px]">
+
+        <div className=" xl:block hidden -mt-[150px] border-[2px] border-[#999999ba] rounded-[40px]">
           <div className="relative w-[230px] h-[400px] bg-black rounded-[40px] border-[10px] border-black overflow-hidden shadow-lg">
             <div className="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-4 bg-gray-700 rounded-full"></div>
             <img
@@ -59,9 +60,8 @@ const Excercise = () => {
           </div>
         </div>
       </div>
-
-      <div className="bg-[#FBFBFB] flex pt-4 -rotate-2 mt-2 text-sm mb-7 overflow-x-auto">
-        <div className=" animate-scroll flex space-x-3">
+      <div className="bg-[#FBFBFB] flex py-3  -rotate-2 justify-center items-center md:-mt-4 mt-2 text-sm mb-7 overflow-hidden">
+        <div className="animate-scroll flex space-x-3 w-fit whitespace-nowrap">
           <ServicesScroll
             text={"💪Powerlifting"}
             className={
