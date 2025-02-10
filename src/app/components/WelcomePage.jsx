@@ -4,29 +4,29 @@ import React from "react";
 const WelcomePage = () => {
   return (
     <div className="bg-[#161E2A] container mx-auto relative p-5 flex flex-col justify-center items-center gap-5">
-      <h5 className="text-[#FFD429] font-inter font-bold text-lg z-10">
-        Welcome to IRONX gym fitness
+      <h5 className="text-[#FFD429] font-inter font-bold sm:text-lg text-base z-10">
+        Welcome To IRONX Gym Fitness
       </h5>
-      <h3 className="text-center text-[#FFFFFF] font-bold font-inter text-3xl z-10">
+      <h3 className="text-center text-[#FFFFFF] font-bold font-inter sm:text-4xl text-2xl capitalize z-10">
         Lift heavy, push limits, and stay strong. <br /> Proin eleifend purus
         augue semper fit. <br /> Train hard, repeat daily, and build the best
         version of <br />
         yourself.
       </h3>
-      <h6 className="text-white z-20 font-medium font-inter text-base text-center">
+      <h6 className="text-[#E6E6E6] z-20 font-medium capitalize font-inter sm:text-base text-sm text-center">
         Nulla facilisi. Hustle hard, recover smart, and stay focused on your
         fitness journey. Achieve goals step by step,
         <br /> one rep at a time. Stronger every day, both in body and in mind.
       </h6>
-      <div className="flex items-center justify-center z-10"> 
-      <Image
-        src="/Images/signature (2).svg"
-        height="45"
-        width="170"
-        alt="search"
-      />
+      <div className="flex items-center justify-center z-10">
+        <Image
+          src="/Images/signature (2).svg"
+          height="45"
+          width="170"
+          alt="search"
+        />
       </div>
-      <p className="font-inter font-medium gap-2 text-base text-center z-10">
+      <p className="font-inter font-medium gap-2 sm:text-base text-sm text-center z-10">
         Ashton Mavrek -{" "}
         <span className="text-[#E6E6E6] font-medium text-xs">GYM Trainer</span>
       </p>

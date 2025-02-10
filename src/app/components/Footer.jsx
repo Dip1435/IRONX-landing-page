@@ -9,7 +9,7 @@ const Footer = () => {
           {/* About IRONX */}
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-bold mb-5 font-inter">About IRONX</h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-[#E6E6E6] text-sm">
               Push limits, crush goals, and transform at IronX Gym—your ultimate
               fitness hub. With state-of-the-art equipment, expert trainers, and
               personalized workout plans, we’re here to empower your fitness
@@ -21,13 +21,13 @@ const Footer = () => {
           <div className="w-full md:w-1/4 flex flex-col">
             <h3 className="text-xl font-bold mb-5 font-inter">Quick Link</h3>
             <div className="flex justify-start items-start gap-9">
-              <ul className="text-gray-400 space-y-2 text-sm">
+              <ul className="text-[#E6E6E6] space-y-2 text-sm">
                 <li>Home</li>
                 <li>Services</li>
                 <li>Classics</li>
                 <li>Membership</li>
               </ul>
-              <ul className="text-gray-400 space-y-2 text-sm">
+              <ul className="text-[#E6E6E6] space-y-2 text-sm">
                 <li>Blogs</li>
                 <li>About Us</li>
                 <li>Contact Us</li>
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* Get In Touch */}
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-bold mb-5 font-inter">Get In Touch</h3>
-            <ul className="text-gray-400 space-y-4 text-sm">
+            <ul className="text-[#E6E6E6] space-y-4 text-sm">
               <li className="flex items-center gap-2">
                 <Image
                   src="/Icons/map-pin.svg"
@@ -83,7 +83,7 @@ const Footer = () => {
                 />
               </span>
             </div>
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-[#E6E6E6] text-sm mt-2">
               Need assistance? Email us at{" "}
               <span className="text-[#FFD429]">ironxgymfitness@ironx.com</span>,
               and we’ll be glad to help!
@@ -107,7 +107,7 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <div className="flex self-end pb-2 space-x-3 text-gray-400">
+            <div className="flex self-end pb-2 space-x-3 text-[#E6E6E6]">
               <Image
                 src="/Icons/facebook.svg"
                 height="24"
